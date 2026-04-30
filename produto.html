@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produto.css">
+    <title>Produtos</title>
+</head>
+<body>
+
+    <header>
+        
+        <img src="img/logo.png" alt="Logo" class="logotipo">
+        <nav>
+            <ul class="menu">
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <a href="login.html"><img src="img/user-solid-full.svg" alt="Login" class="icone"></a>
+        <a href="carrinho.html"><img src="img/cart-arrow-down-solid-full.svg" alt="Carrinho" class="icone"></a>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo-principal">Confira nossos produtos</h1>
+
+        <div class="container-produto">
+<!-- FILTRO DE PRODUTOS -->
+            <div class="filtro">
+                <fieldset class="filtro-categoria">
+                    <legend class="titulo-categoria">FILTRAR</legend>
+                    <div class="filtro-item">
+                        <input type="checkbox" id="filtro-todos" name="categoria" value="todos">
+                        <label for="filtro-todos">Mostrar todos</label>
+                    </div>
+                    <div class="filtro-item">
+                        <input type="checkbox" id="filtro-medicamentos" name="categoria" value="medicamentos">
+                        <label for="filtro-medicamentos">Medicamentos</label>
+                    </div>
+                    <div class="filtro-item">
+                        <input type="checkbox" id="filtro-dermatologicos" name="categoria" value="dermatologicos">
+                        <label for="filtro-dermatologicos">Dermatológicos</label>
+                    </div>
+                    <div class="filtro-item">
+                        <input type="checkbox" id="filtro-outros" name="categoria" value="outros">
+                        <label for="filtro-outros">Outros</label>
+                    </div>
+                </fieldset>
+
+                <div class="anuncio">
+                        <img class="img-anuncio" src="img/propaganda_1.jpg" alt="">
+                        <img class="img-anuncio" src="img/prpaganda_2.jpg" alt="">
+                </div>
+            </div> <!-- FIM DE FILTRO -->
+
+<!-- PRODUTOS -->
+            <div class="produtos">
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+<!-- FOOTER -->
+<footer>
+        <div class="footer-container">
+            <div class="footer-contacts">
+                <img src="img/logo.png" alt="Logo" class="logotipo">
+                <div class="footer-socialmidia">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Institucional</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Nossas Bulas de A à Z</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Todas as Marcas</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Atendimento</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Atendimento por Email</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">FAQ - Perguntas frequentes</a>
+                </li>
+            </ul>
+
+            <div class="footer-feedback">
+                <h3>Feedback</h3>
+                <p>Deixe aqui a sua avaliação e sugestões de melhorias para nosso site.</p>
+
+                <div class="input-group">
+                    <input type="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            &#169 FarmaSync 2026
+            <br>
+            Consulte sempre um médico antes de usar qualquer medicamento.
+        </div>
+</footer>
+</body>
+</html>
